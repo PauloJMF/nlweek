@@ -1,0 +1,22 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "123456",
+    "database": "nlw",
+    "logging": false,
+    "cli":{
+        "migrationsDir":"src/database/migrations",
+        "entitiesDir":"src/entities"
+    },
+    "entities": [
+       "src/entities/**/*.ts"
+    ],
+    "migrations": [
+       "src/database/migrations/*.ts"
+    ],
+    "subscribers": [
+       "src/subscriber/**/*.ts"
+    ]
+ }
