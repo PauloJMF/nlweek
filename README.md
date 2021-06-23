@@ -7,8 +7,8 @@
     [ x ] Email é required
 
 - Cadastro de Tags
-    [ ] Nome de Tag é unique
-    [ ] Nome de Tag é required
+    [ x ] Nome de Tag é unique
+    [ x ] Nome de Tag é required
     [ ] Tag só cadastrada pelo Admin
 
 - Cadastro de Compliments

@@ -11,20 +11,19 @@ class CreateUserService {
     async execute({ name, email, admin }: ICreateUserRequest) {
         const usersRepository = getCustomRepository(UserRepository)
 
-        
-        if(!email){
+        if (!email) {
             throw new Error('Email not set')
         }
 
-        const userAlreadyExists  = await usersRepository.findOne({email})
+        const userAlreadyExists = await usersRepository.findOne({ email })
 
-        if(userAlreadyExists){
+        if (userAlreadyExists) {
             throw new Error('Email already being used')
         }
-        
+
         const user = usersRepository.create({
             name,
-            email, 
+            email,
             admin
         })
 
