@@ -2,6 +2,7 @@ import express, { NextFunction, Request, Response } from 'express'
 import './database'
 import 'express-async-errors'
 import { router } from './routes'
+require('dotenv').config()
 
 const app = express()
 
